@@ -300,7 +300,7 @@
       // チェックボックス一覧を生成（デフォルトは全選択）
       calList.innerHTML = calendars.map(cal => `
         <label class="cal-item">
-          <input type="checkbox" value="${escapeHtml(cal.id)}" checked />
+          <input type="checkbox" value="${escapeHtml(cal.id)}" />
           <span class="cal-dot" style="background:${cal.backgroundColor || '#4285f4'}"></span>
           <span>${escapeHtml(cal.summary)}</span>
         </label>
